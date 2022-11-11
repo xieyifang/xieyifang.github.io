@@ -1,80 +1,59 @@
 <!DOCTYPE html>
 <style type="text/css">
-    *{
-        background-color:lightseagreen;
-        font-size:20px;
-    }
-    h1 {
-        text-align: center;
-        font-size: 50px;
-        color:white;
-    }
-    table{
-        border:solid black 2px;
-        margin: 0 auto;
-    }
-    td{
-        border: solid black 1px;
-        text-align:center;
-        width:200px;
-        height:100px;
-        background-color:darkgrey;
-    }
-    th {
-        text-align: center;
-        width: 200px;
-        height: 100px;
-        font-size:80px;
-        background-color:Highlight;
-    }
-    .while{
-        background-color:paleturquoise;
-    }
-    .xq{
-        background-color:orange;
-    }
+		* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	}
+	h2 {
+	color: #222;
+	0.
+	font-size: 100px;
+	}
+	h2 a {
+	text-decoration: none;
+	color: white;
+	}
+	h2 span {
+	transition: 0.5s;
+	}
+	h2:hover span:nth-child(1) {
+	margin-right: 10px;
+	}
+	h2:hover span:nth-child(2) {
+	margin-left: 30px;
+	}
+	h2 span:nth-child(1)::after {
+	opacity: 0;
+	transition: 2s;
+	}
+	h2:hover span:nth-child(1)::after {
+	content: "'";
+	opacity: 1;
+	}
+	h2:hover span {
+	color: white;
+	text-shadow: 0 0 10px #fff,
+	0 0 20px #fff,
+	0 0 40px #fff,
+	0 0 80px #fff;
+	}
 </style>
 <html>
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
 </head>
 
 <body>
-<h1>hello 网课</h1>
-    <form>
-
-        <table id="table">
-            <tr>
-                <th colspan="6">课表</th>
-            </tr>
-            <tr>
-                <td class="xq">星期</td>
-                <td class="xq">星期一</td>
-                <td class="xq">星期二</td>
-                <td class="xq">星期三</td>
-                <td class="xq">星期四</td>
-                <td class="xq">星期五</td>
-            </tr>
-            <tr>
-                <td class="while">上午</td>
-                <td>java</td>
-                <td>通信原理</td>
-                <td>数据库</td>
-                <td>移动通信技术</td>
-                <td>网络优化理论与实训</td>
-            </tr>
-            <tr>
-                <td class="while">下午</td>
-                <td>街舞</td>
-                <td>疫情防控学习</td>
-                <td>自我管理</td>
-                <td>思政</td>
-                <td>体育</td>
-            </tr>
-        </table>
-    </form>
-
-
+<h2><span>我</span>蔡徐坤<span>I love PalyBasketball! </span></h2>
+<h2><span>也许</span>这<span>就是爱吧 </span></h2>
 </body>
 </html>
